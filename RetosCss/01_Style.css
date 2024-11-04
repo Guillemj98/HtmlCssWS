@@ -1,0 +1,11 @@
+html, body{
+    background-color: blueviolet;
+    display: flex;
+    
+}
+.caja1, .caja2, .caja3, .caja4{
+    background-color: white;
+    width: 12.5rem;
+    height: 18rem;
+    margin: 0.5rem;
+}

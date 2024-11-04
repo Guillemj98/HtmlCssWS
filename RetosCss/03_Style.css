@@ -1,0 +1,18 @@
+.container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+    
+}
+.caja1, .caja2, .caja3, .caja4, .caja5{
+    margin: 0.5rem;
+    border: 1px solid black;
+    width: 15.75rem;
+    height: 18.75rem;
+    overflow: hidden;
+}
+.texto{
+    padding: 0.5rem;
+}

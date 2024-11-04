@@ -1,0 +1,23 @@
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circulo{
+    width: 3.125rem;
+    height:3.125rem ;
+    background-color: red;
+    border-radius: 100%;
+    margin-right: 30rem;
+}
+.conjunto2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.palabra{
+    margin-right: 3rem;
+
+}
