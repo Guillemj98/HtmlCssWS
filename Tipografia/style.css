@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Dorsa&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sahitya:wght@400;700&family=Shojumaru&family=Wire+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Dorsa&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sahitya:wght@400;700&family=Shojumaru&family=Wire+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-primary:"Roboto Mono", sans-serif;
+    --font-secondary:"Montserrat", sans-serif;
+    --color-bg: white;
+    --color-text:black;
+    --color-border:black;
+    --font-size-note: 0.64rem;
+    --font-size-caption: 0.8rem;
+    --font-size-normal: 1rem;
+    --font-size-h5: 1.25rem;
+    --font-size-h4: 1.56rem;
+    --font-size-h3: 1.95rem;
+    --font-size-h2: 2.44rem;
+    --font-size-h1: 3.05rem;
+    --font-weight-bold: 800;
+    --font-weight-medium: 600;
+    --font-weight-ligth: 400;
+
+}
+.dark-theme{
+    --color-bg: black;
+    --color-text:white;
+    --color-border:white;
+  
+    
+}
+p{
+    font-size: var(--font-size-normal);
+    font-family: var(--font-secondary);
+    white-space: nowrap;         
+    overflow: hidden;            
+    text-overflow: ellipsis;
+}
+.caption{
+    font-size: var(--font-size-caption);
+}
+
+.note{
+    font-size: var(--font-size-note);
+}
+div{
+    border: 1px solid var(--color-border);
+    margin-bottom: .75rem;
+    padding: 1rem;
+   
+
+}
+h1, h2, h3, h4, h5{
+    font-family: var(--font-primary);
+    white-space: nowrap;         
+    overflow: hidden;            
+    text-overflow: ellipsis;
+}
+.bold{
+    font-weight: var(--font-weight-bold);
+}
+.medium{
+    font-weight: var(--font-weight-medium);
+}
+.ligth{
+    font-weight: var(--font-weight-ligth);
+}
+body{
+    padding: 2rem;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+h1{
+    font-size: var(--font-size-h1);
+}
+h2{
+    font-size: var(--font-size-h2);
+}
+h3{
+    font-size: var(--font-size-h3);
+}
+h4{
+    font-size: var(--font-size-h4);
+}
+h5{
+    font-size: var(--font-size-h5);
+}
+
+
