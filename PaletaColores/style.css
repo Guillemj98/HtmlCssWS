@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Dorsa&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sahitya:wght@400;700&family=Shojumaru&family=Wire+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Dorsa&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sahitya:wght@400;700&family=Shojumaru&family=Wire+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100dvh;
+    width: 100dvh;
+}
+:root{
+    --font-primary:"Roboto Mono", sans-serif;
+    --font-secondary:"Montserrat", sans-serif;
+    --color-fondo:#4A4238;
+    --color-fondo-variante1:#FBF0E2;
+    --color-fondo-variante2:#9E8F7D;
+    --color-fondo-variante3:#3A2B18;
+    --color-fondo-variante4:#1F1202;
+
+
+    --color-text:#4D5359;
+    --color-text-variante1:#FDFDFD;
+    --color-text-variante2:#82878C;
+    --color-text-variante3:#172028;
+    --color-text-variante4:#000509;
+
+
+    --color-acentuacion:#508484;
+    --color-acentuacion-variante1:#FBFCFC;
+    --color-acentuacion-variante2:#D0E0E0;
+    --color-acentuacion-variante3:#043737;
+    --color-acentuacion-variante4:#002A2A;
+    
+
+    --color-gradiente-primario-acentuacion:linear-gradient(180deg, rgba(74,66,56,.7) 13%, rgba(80,132,132,.7) 72%);
+    --color-gradiente-primario-secundario:linear-gradient(0deg, rgba(31,18,2,.7) 34%, rgba(253,253,253,.5) 100%);
+
+}
+div{
+    padding: 2rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background-color: var(--color-fondo-variante4);
+}
+.primera1{
+    font-family:var(--font-primary) ;
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante1);
+}
+.primera2{
+    font-family: var(--font-secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante1);
+}
+
+.primera3{
+    color:var(--color-acentuacion-variante4)!important;
+    background-color: var(--color-acentuacion-variante2);
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.segunda1{
+    font-family:var(--font-primary) ;
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante2);
+}
+.segunda2{
+    font-family: var(--font-secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante2);
+}
+
+.segunda3{
+    color:var(--color-acentuacion-variante4)!important;
+    background-color: var(--color-acentuacion-variante1);
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.tercera1{
+    font-family:var(--font-primary) ;
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante3);
+}
+.tercera2{
+    font-family: var(--font-secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante3);
+}
+
+.tercera3{
+    color:var(--color-acentuacion-variante1)!important;
+    background-color: var(--color-acentuacion-variante3);
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.cuarta1{
+    font-family:var(--font-primary) ;
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante4);
+}
+.cuarta2{
+    font-family: var(--font-secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante4);
+}
+
+.cuarta3{
+    color:var(--color-acentuacion-variante4)!important;
+    background-color: var(--color-acentuacion-variante4);
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.quinta1{
+    font-family:var(--font-primary) ;
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante);
+}
+.quinta2{
+    font-family: var(--font-secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text-variante);
+}
+
+.quinta3{
+    color:var(--color-acentuacion-variante4)!important;
+    background-color: var(--color-acentuacion-variante);
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.fondo1{
+    padding: 2rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background-color: var(--color-fondo-variante);
+}
+.fondo2{
+    width: 100vw;
+    padding: 2rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background-color: var(--color-fondo-variante1);
+}
+.fondo3{
+    padding: 2rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background-color: var(--color-fondo-variante2);
+}
+.fonodo4{
+    padding: 2rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background-color: var(--color-fondo-variante2);
+}
+.overlay{
+    display: flex;
+    align-items:center ;
+    
+    background-image: var(--color-gradiente-primario-secundario),
+    url(/imagenes/image.png);
+    background-size: cover;
+}
