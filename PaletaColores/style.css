@@ -6,8 +6,16 @@
     box-sizing: border-box;
 }
 body{
-    height: 100dvh;
-    width: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenedor se expanda */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el scroll innecesario */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    background: var(--color-fondo);
+    
 }
 :root{
     --font-primary:"Roboto Mono", sans-serif;
@@ -37,12 +45,7 @@ body{
     --color-gradiente-primario-secundario:linear-gradient(0deg, rgba(31,18,2,.7) 34%, rgba(253,253,253,.5) 100%);
 
 }
-div{
-    padding: 2rem;
-    gap: 1rem;
-    border: solid 1px black;
-    background-color: var(--color-fondo-variante4);
-}
+
 .primera1{
     font-family:var(--font-primary) ;
     text-overflow: ellipsis;
@@ -175,7 +178,7 @@ div{
     background-color: var(--color-fondo-variante);
 }
 .fondo2{
-    width: 100vw;
+    width: 50dvw;
     padding: 2rem;
     gap: 1rem;
     border: solid 1px black;
@@ -198,6 +201,6 @@ div{
     align-items:center ;
     
     background-image: var(--color-gradiente-primario-secundario),
-    url(/imagenes/image.png);
-    background-size: cover;
+    url(/imagenes/best-desktop-pc-background-6i8psp3pv2lii2k3.jpg);
+    background-size: auto;
 }
