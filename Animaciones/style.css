@@ -98,10 +98,10 @@ button{
         transform:skewX(-20deg) skewY(-20deg) ;
     }
     50%{
-        transform:skewX(50deg) skewY(50deg) ;  
+        transform:skewX(50deg) skewY(10deg) ;  
     }
     75%{
-        transform:skewX(87deg) skewY(00deg) ;  
+        transform:skewX(85deg) skewY(00deg) ;  
     }
     100%{
         transform:skewX() ;
@@ -141,7 +141,7 @@ button{
 }
 @keyframes brillar{
     0% {
-        box-shadow: 0 0 1rem rgba(255, 0, 0, 0); 
+        box-shadow: 0 0 0.2rem rgba(255, 0, 0, 0); 
       }
       25% {
         box-shadow: 0rem 0rem 2rem rgba(255, 0, 0, 0.3); 
@@ -154,7 +154,45 @@ button{
       }
 
       100% {
-        box-shadow: 0 0 1rem rgba(255, 0, 0, 0); 
+        box-shadow: 0 0 0rem rgba(255, 0, 0, 0); 
       }
 }
+.blur{
+    animation: blur 4s ease-in-out infinite;
+}
+@keyframes blur{
+    0% {
+         filter: blur(0rem);
+      }
+      25% {
+        filter: blur(.5rem);
+      }
+      50% {
+        filter: blur(1rem);
+      }
+      75% {
+        filter: blur(.5rem);
+      }
 
+      100% {
+        filter: blur(0rem);
+      }
+}
+.hawk{
+animation: antonioAguilas 1s ease-in-out infinite ;
+}
+@keyframes antonioAguilas{
+    0% {
+        transform: rotateZ(0deg) rotateY(0deg) ;
+     }
+     25% {
+        transform:rotateZ(-180deg) rotateY(-90deg) ;
+     }
+     50% {
+        transform: rotateZ(-360deg) rotateY(-180deg) ;
+     }
+
+     100% {
+        transform: rotateZ(0deg) rotateY(0deg)   ;
+     }
+}
