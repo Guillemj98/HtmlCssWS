@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --font-primary:"IBM Plex Mono", sans-serif;
+    --color-background: black;
+    --color-text:white;
+    --font-weight-ligth: 400;
+    --font-size-subtitle: 1rem;
+    --font-size-title: 1.56rem;
+    --letter-spacing-subtitle:0.09rem
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    gap: 1rem;
+    place-items: center;
+    background-color:var(--color-background);
+    font-family: var(--font-primary);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    color: var(--color-text);
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+.titulo{
+    font-size: var(--font-size-title);
+    
+}
+.subtitulo{
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-ligth);
+    opacity: .6;
+    letter-spacing:var(--letter-spacing-subtitle) ;
+
+}
+button{
+    border:1px solid rgb(183, 38, 38);
+    padding: .3rem 1rem ;
+    margin: 1rem;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    border-radius: .5rem;
+    font-size: var(--font-size-subtitle);
+    box-shadow:0rem 0rem 3rem rgba(255, 0, 0, 0.3) ;
+}
+.shakes{
+    animation: moverBoton 1s  infinite;
+}
+@keyframes moverBoton{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(2rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.pulse{
+    animation:agrandar 2s infinite ;
+}
+@keyframes agrandar{
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(150%);
+    }
+    100%{
+        transform: scale(100%);
+    
+    }
+}
+.glitch{
+    animation: glichear 1s infinite;
+}
+@keyframes glichear{
+    0%{
+        transform:skewX() ;
+    }
+    25%{
+        transform:skewX(-20deg) skewY(-20deg) ;
+    }
+    50%{
+        transform:skewX(50deg) skewY(50deg) ;  
+    }
+    75%{
+        transform:skewX(87deg) skewY(00deg) ;  
+    }
+    100%{
+        transform:skewX() ;
+    }
+}
+.turn{
+    animation: voltear 3s infinite;
+}
+@keyframes voltear{
+    0%{
+        transform:rotateY(0deg) ;
+    }
+    50%{
+        transform:rotateY(-90deg) ;  
+    }
+    100%{
+        transform:rotateY(-180deg) ;
+    }
+
+}
+.fill{
+
+}
+@keyframes rellenar{
+
+}
+
+.sheen{
+
+}
+@keyframes shinning{
+
+}
+
+.empashize{
+    animation:brillar 3s ease-in-out infinite ;
+}
+@keyframes brillar{
+    0% {
+        box-shadow: 0 0 1rem rgba(255, 0, 0, 0); 
+      }
+      25% {
+        box-shadow: 0rem 0rem 2rem rgba(255, 0, 0, 0.3); 
+      }
+      50% {
+        box-shadow: 0rem 0rem 3rem rgba(255, 14, 14, 1); 
+      }
+      75% {
+        box-shadow: 0rem 0rem 2rem rgba(255, 14, 14, 0.3); 
+      }
+
+      100% {
+        box-shadow: 0 0 1rem rgba(255, 0, 0, 0); 
+      }
+}
+
