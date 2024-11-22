@@ -101,7 +101,7 @@ button{
         transform:skewX(50deg) skewY(10deg) ;  
     }
     75%{
-        transform:skewX(85deg) skewY(00deg) ;  
+        transform:skewX(85deg) skewY(0deg) ;  
     }
     100%{
         transform:skewX() ;
@@ -183,16 +183,16 @@ animation: antonioAguilas 1s ease-in-out infinite ;
 }
 @keyframes antonioAguilas{
     0% {
-        transform: rotateZ(0deg) rotateY(0deg) ;
+        transform: rotateY(0deg) rotateZ(0deg) ;
      }
      25% {
-        transform:rotateZ(-180deg) rotateY(-90deg) ;
+        transform: rotateY(-90deg) rotateZ(-180deg)  ;
      }
      50% {
-        transform: rotateZ(-360deg) rotateY(-180deg) ;
+        transform:rotateY(-180deg) rotateZ(-360deg)  ;
      }
 
      100% {
-        transform: rotateZ(0deg) rotateY(0deg)   ;
+        transform:rotateY(0deg) rotateZ(0deg)    ;
      }
 }
