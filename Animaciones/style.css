@@ -1,14 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Brawler:wght@400;700&family=Dorsa&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monofett&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sahitya:wght@400;700&family=Shojumaru&family=Wire+One&display=swap');
 :root{
-    --font-primary:"IBM Plex Mono", sans-serif;
+    --font-primary:"Azeret Mono", monospace;
     --color-background: black;
+    --color-borde:rgb(183, 38, 38);
     --color-text:white;
-    --font-weight-ligth: 400;
+    --font-weight-ligth: 100;
     --font-size-subtitle: 1rem;
     --font-size-title: 1.56rem;
-    --letter-spacing-subtitle:0.09rem
+    --letter-spacing-subtitle:0.09rem;
+    --color-gradiente: 90deg, rgba(244,191,191,0.3) 20%, rgba(231,91,91,.3) 60%, rgba(217,70,70,.3) 80%;
+    
 }
 
 *{
@@ -43,12 +46,12 @@ div{
 .subtitulo{
     font-size: var(--font-size-subtitle);
     font-weight: var(--font-weight-ligth);
-    opacity: .6;
+    opacity: .5;
     letter-spacing:var(--letter-spacing-subtitle) ;
 
 }
 button{
-    border:1px solid rgb(183, 38, 38);
+    border:1px solid var(--color-borde);
     padding: .3rem 1rem ;
     margin: 1rem;
     font-family: var(--font-primary);
@@ -69,7 +72,7 @@ button{
         transform: translateX(2rem);
     }
     100%{
-        transform: translateX(0);
+        transform: translateX(-.5rem);
     }
 }
 .pulse{
@@ -88,7 +91,7 @@ button{
     }
 }
 .glitch{
-    animation: glichear 1s infinite;
+    animation: glichear .5s infinite;
 }
 @keyframes glichear{
     0%{
@@ -101,7 +104,7 @@ button{
         transform:skewX(50deg) skewY(10deg) ;  
     }
     75%{
-        transform:skewX(85deg) skewY(0deg) ;  
+        transform:skewX(86deg) skewY(0deg) ;  
     }
     100%{
         transform:skewX() ;
@@ -123,18 +126,53 @@ button{
 
 }
 .fill{
-
+    position: relative;
+    overflow: hidden;
+    
+}
+.fill::after{
+    content: "";
+    box-shadow: 1rem 0rem 1rem rgba(255, 0, 0, 0.3);
+    width: 0%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: var(--color-borde);
+    position: absolute;
+    box-sizing: border-box;
+    animation: rellenar 3s infinite 
 }
 @keyframes rellenar{
+    to{width: 100%;};
 
 }
+
 
 .sheen{
-
+    position: relative;
+    overflow: hidden;
 }
-@keyframes shinning{
-
+.sheen::after {
+    content: "";
+    position: absolute;
+    top:-100%;
+    left: 0%; 
+    width: 30%; 
+    height: 400%; 
+    background: linear-gradient(var(--color-gradiente));
+    animation: shining 1s infinite ease-in-out;
+    filter: blur(12px);
 }
+
+@keyframes shining {
+    0% {
+        transform: translateX(-150%) rotate(-45deg); ; 
+    }
+    100% {
+        transform: translateX(500%) rotate(-45deg); ; 
+    }
+}
+
 
 .empashize{
     animation:brillar 3s ease-in-out infinite ;
@@ -169,6 +207,7 @@ button{
       }
       50% {
         filter: blur(1rem);
+        transform:skewX(30deg) skewY(10deg)
       }
       75% {
         filter: blur(.5rem);
@@ -179,20 +218,15 @@ button{
       }
 }
 .hawk{
-animation: antonioAguilas 1s ease-in-out infinite ;
+animation: antonioAguilas 1.5s ease-in-out infinite ;
 }
 @keyframes antonioAguilas{
     0% {
-        transform: rotateY(0deg) rotateZ(0deg) ;
+        transform: rotate(0deg ) ;
      }
-     25% {
-        transform: rotateY(-90deg) rotateZ(-180deg)  ;
-     }
-     50% {
-        transform:rotateY(-180deg) rotateZ(-360deg)  ;
-     }
+   
 
      100% {
-        transform:rotateY(0deg) rotateZ(0deg)    ;
+        transform: rotate(900deg)    ;
      }
 }

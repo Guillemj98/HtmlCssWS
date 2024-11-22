@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foto{
+   
+    transition: background 10s linear, transform 10s ease-in;
+    background-image: url(/imagenes/miguel.jpg);
+    transform: rotate(0deg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    
+}
+.foto:hover {
+    
+    transform: rotate(3600deg) scale(7.5);
+   
+  }
