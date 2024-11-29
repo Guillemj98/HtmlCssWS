@@ -5,24 +5,68 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
+    
 }
-.tarjeta-entrenador{
-    width: 50%;
-    height: 50%;
+.trainer-card{
+    width: 50rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aqua;
     border-radius: 1rem;
+    border: 2px solid black;
+}
+.trainer-card__header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid black;
+}
+.trainer-card__logo img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+.trainer-card__title{
+    display: flex;
+    flex-direction: row;
+   gap: 5rem;
+      
+}
+.trainer-card__id{
+    display: flex;
+    justify-content: flex-end;
+}
+.trainer-card__content{
+
+}
+.trainer-card__grid{
     
 }
+
+/*
+.tarjeta-entrenador{
+    width: 50rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 2px solid black;
+    
+}
+
 .titulo{
     display: flex;
     padding: 1rem;
@@ -49,3 +93,62 @@ body{
         transform: rotate(360deg);
     }
 }
+
+.pokemons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;    
+    border: 1px solid black;
+    
+}
+.grid_pokemons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .5rem;
+    margin: 1rem;
+    width: 70%;
+    height: auto; 
+    
+
+}
+.pokemon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    overflow: hidden;  
+}
+
+.entrenador{
+    width: 50%;
+    height: auto;   
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.entrenador img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  
+
+}
+
+.medallas img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.medallas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem
+}
+*/
