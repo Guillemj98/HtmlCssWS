@@ -1,0 +1,166 @@
+
+/*Aqui van a ir los imports de las tipografias, es decir lo tipos de letras que va
+a tener la interfaz*/
+
+/*1. La primera tipografia seleccionada(puede estar sujeta a cambios es Chakra Petch*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*2.La segunda tipografia seleccionad es Fuzzy Bubles, esta va destinada al texto que aparce abajo en la interfaz*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+ /* Aqui van las variables  */
+:root{
+   /* Variables del tipo de fuente*/
+   --font-family-primary: "Chakra Petch", sans-serif;
+   --font-family-secondary:"Fuzzy Bubbles", sans-serif;
+
+   /* Variables de colores de fondo con sus variantes*/
+   --color-background:#0D3B66;
+   --color-background-variant1:#9BB5CE;
+   --color-background-variant2:#2F5D8A;
+   --color-background-variant3:#021E38;
+   --color-background-variant4:#000102;
+
+   /* Variables de colores de fondo con sus variantes*/
+   /*Aqui en este caso no hay mucho variedad*/
+   --color-text:#FAF0CA;
+   --color-text-variant1:#A8A8A8;
+   --color-text-variant2:#A8A8A8;
+   --color-text-variant3:#5A4907;
+   --color-text-variant4:#5A4907;
+
+   /* Variables de colores de acentuacion con sus variantes*/
+   --color-emphasis:#AFBBF2;
+   --color-emphasis-variant1:#FFFFFF;
+   --color-emphasis-variant2:#FFFFFF;
+   --color-emphasis-variant3:#5D70C6;
+   --color-emphasis-variant4:#09133F;
+
+   /* Variables de colores de repuesto con sus variantes*/
+   --color-test:#F87666;
+   --color-test-variant1:#FFFFFF;
+   --color-test-variant2:#FFC3BB;
+   --color-test-variant3:#B32E1D;
+   --color-test-variant4:#0E0200;
+
+   /*Variables de los gradientes que hay que escoger*/
+   --color-gradiente-primary-version1: linear-gradient(87deg, rgba(47,93,138,1) 9%, rgba(13,59,102,1) 56%, rgba(155,181,206,1) 100%);  
+   --color-gradiente-primary-version2:linear-gradient(90deg, rgba(179,46,29,1) 16%, rgba(255,195,187,1) 55%, rgba(248,118,102,1) 100%);
+   --color-gradiente-primary-version3:linear-gradient(90deg, rgba(179,46,29,1) 0%, rgba(255,195,187,1) 38%, rgba(47,93,138,1) 97%);
+   --color-gradiente-emphasis-version1:linear-gradient(142deg, rgba(13,59,102,1) 20%, rgba(250,240,202,1) 49%, rgba(175,187,242,1) 66%, rgba(248,118,102,1) 92%);
+   --color-gradiente-emphasis-version2:linear-gradient(0deg, rgba(13,59,102,1) 0%, rgba(250,240,202,1) 3%, rgba(175,187,242,1) 41%, rgba(248,118,102,1) 81%);
+   
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--font-family-primary);
+    white-space: nowrap;         
+    overflow: hidden;            
+    text-overflow: ellipsis;
+}
+p{
+    font-family: var(--font-family-secondary);
+}
+
+.primera1{
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-test-variant4);
+}
+.primera2{
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-test-variant4);
+}
+
+.primera3{
+    color:var(--color-test-variant4)!important;
+    background-color: var(--color-test);
+    font-family: var(--font-family-primary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.tercera1{
+    font-family: var(--font-family-secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text);
+}
+.tercera2{
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text);
+}
+
+.tercera3{
+    color:var(--color-test-variant3)!important;
+    background-color: var(--color-text);
+    font-family: var();
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.fondo{
+    padding: 2rem;
+    margin: 10rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background:var(--color-gradiente-emphasis-version2) ;
+}
+
+.fondo2{
+    width: 50dvw;
+    padding: 2rem;
+    margin: 10rem;
+    gap: 1rem;
+    border: solid 1px black;
+    background: var(--color-gradiente-emphasis-version2);
+}
+
+.sexta1{
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text);
+}
+.sexta2{
+    font-family: var();
+    text-overflow: ellipsis;
+    white-space: nowrap;         
+    overflow: hidden;
+    color: var(--color-text);
+}
+.sexta3{
+    color:var(--color-text)!important;
+    background-color: var(--color-background);
+    font-family: var(--font-family-primary);
+    margin-top: 1rem;
+    border-radius: 10%;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.fondo5{
+    padding: 2rem;
+    gap: 1rem;
+    margin: 10rem;
+    border: solid 1px black;
+    background:var(--color-gradiente-emphasis-version2)
+}
+.gradiente{
+    background:var(--color-gradiente-primary-version1);
+    width: 100%;
+    height: 100%;
+}
