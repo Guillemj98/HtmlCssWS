@@ -61,7 +61,7 @@ a tener la interfaz*/
    
    --color-gradiente-borde-metalico-linear:linear-gradient(45deg, rgba(212,215,0,1) 0%, rgba(229,228,226,1) 50%, rgba(176,196,222,1) 100%);
    --color-gradiente-borde-metalico-brillante: linear-gradient(45deg, #ffd700, #ffffff, #b0e0e6);
-   --color-gradiente-shinnig:linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+   --color-gradiente-shinnig:linear-gradient(45deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
    /*Variables de los margenes paddings etc que hay que escoger*/
    --spacing-xs:.5rem;
    --spacing-sm:.7rem;
