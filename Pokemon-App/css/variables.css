@@ -3,55 +3,77 @@
 a tener la interfaz*/
 
 /*1. La primera tipografia seleccionada(puede estar sujeta a cambios es Chakra Petch*/
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*2.La segunda tipografia seleccionad es Fuzzy Bubles, esta va destinada al texto que aparce abajo en la interfaz*/
 
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
  /* Aqui van las variables  */
 :root{
+
    /* Variables del tipo de fuente*/
-   --font-family-primary: "Chakra Petch", sans-serif;
-   --font-family-secondary:"Fuzzy Bubbles", sans-serif;
+   --font-family-primary:"Space Mono",sans-serif;
+   --font-family-secondary:"Manrope",sans-serif;
+
+   /*Tamaños de fuentes*/
+   --font-size-header:1.5rem;
 
    /* Variables de colores de fondo con sus variantes*/
-   --color-background:#0D3B66;
-   --color-background-variant1:#9BB5CE;
-   --color-background-variant2:#2F5D8A;
-   --color-background-variant3:#021E38;
-   --color-background-variant4:#000102;
+   --color-background:	#800000;
+   --color-background-variant1:#DDDDDD;
+   --color-background-variant2:#D04848;
+   --color-background-variant3:#200000;
+   --color-background-variant4:#000000;
 
    /* Variables de colores de fondo con sus variantes*/
    /*Aqui en este caso no hay mucho variedad*/
-   --color-text:#FAF0CA;
-   --color-text-variant1:#A8A8A8;
-   --color-text-variant2:#A8A8A8;
-   --color-text-variant3:#5A4907;
-   --color-text-variant4:#5A4907;
+   /*Este para el boton*/
+   --color-text:#A52A2A;
+   --color-text-variant1:#FFFFFF;
+   --color-text-variant2:#FFA4A4;
+   --color-text-variant3:#3F0000;
+   --color-text-variant4:#000000;
 
    /* Variables de colores de acentuacion con sus variantes*/
-   --color-emphasis:#AFBBF2;
+   --color-emphasis:#CD853F;
    --color-emphasis-variant1:#FFFFFF;
-   --color-emphasis-variant2:#FFFFFF;
-   --color-emphasis-variant3:#5D70C6;
-   --color-emphasis-variant4:#09133F;
+   --color-emphasis-variant2:#FFD8B1;
+   --color-emphasis-variant3:#703700;
+   --color-emphasis-variant4:#010100;
 
    /* Variables de colores de repuesto con sus variantes*/
-   --color-test:#F87666;
+   --color-test:#8B4513;
+   /*La variante 1 para el texto*/
    --color-test-variant1:#FFFFFF;
-   --color-test-variant2:#FFC3BB;
-   --color-test-variant3:#B32E1D;
-   --color-test-variant4:#0E0200;
+   --color-test-variant2:#FFCCA8;
+   --color-test-variant3:#130800;
+   --color-test-variant4:#000000;
 
    /*Variables de los gradientes que hay que escoger*/
-   --color-gradiente-primary-version1: linear-gradient(87deg, rgba(47,93,138,1) 9%, rgba(13,59,102,1) 56%, rgba(155,181,206,1) 100%);  
-   --color-gradiente-primary-version2:linear-gradient(90deg, rgba(179,46,29,1) 16%, rgba(255,195,187,1) 55%, rgba(248,118,102,1) 100%);
-   --color-gradiente-primary-version3:linear-gradient(90deg, rgba(179,46,29,1) 0%, rgba(255,195,187,1) 38%, rgba(47,93,138,1) 97%);
-   --color-gradiente-emphasis-version1:linear-gradient(142deg, rgba(13,59,102,1) 20%, rgba(250,240,202,1) 49%, rgba(175,187,242,1) 66%, rgba(248,118,102,1) 92%);
-   --color-gradiente-emphasis-version2:linear-gradient(0deg, rgba(13,59,102,1) 0%, rgba(250,240,202,1) 3%, rgba(175,187,242,1) 41%, rgba(248,118,102,1) 81%);
+   --color-gradiente-primary-version1: linear-gradient(0deg, rgba(128,0,0,1) 0%, rgba(165,42,42,1) 26%, rgba(191,102,56,1) 99%, rgba(139,69,19,1) 100%);  
+   /*Version2 para el fondo*/
+   --color-gradiente-primary-version2:linear-gradient(180deg, rgba(165,42,42,1) 23%, rgba(205,133,63,1) 49%, rgba(128,0,0,1) 98%, rgba(139,69,19,1) 100%);
    
+   --color-gradiente-primary-version3:linear-gradient(85deg, rgba(128,0,0,1) 36%, rgba(139,69,19,1) 46%, rgba(191,102,56,1) 52%, rgba(165,42,42,1) 93%);
+   --color-gradiente-emphasis-version1:linear-gradient(85deg, rgba(255,164,164,1) 36%, rgba(208,72,72,.0) 100%);
+
+   --color-gradiente-emphasis-version-fondo:linear-gradient(85deg, rgba(255,164,164,.8) 36%, rgba(208,72,72,.5) 100%);
+   --color-gradiente-emphasis-version2:linear-gradient(85deg, rgba(63,0,0,1) 72%, rgba(19,8,0,1) 100%);
+   
+   --color-gradiente-borde-metalico-linear:linear-gradient(45deg, rgba(212,215,0,1) 0%, rgba(229,228,226,1) 50%, rgba(176,196,222,1) 100%);
+   --color-gradiente-borde-metalico-brillante: linear-gradient(45deg, #ffd700, #ffffff, #b0e0e6);
+   --color-gradiente-shinnig:linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+   /*Variables de los margenes paddings etc que hay que escoger*/
+   --spacing-xs:.5rem;
+   --spacing-sm:.7rem;
+   --spacing-md: 1rem;
+   --spacing-lg: 1.5rem;
+   --spacing-xl: 2.0rem;
 }
 
+h1{
+    font-family: var(--font-family-secondary);
+}
+/*
 h1, h2, h3, h4, h5{
     font-family: var(--font-family-primary);
     white-space: nowrap;         
@@ -67,18 +89,18 @@ p{
     text-overflow: ellipsis;
     white-space: nowrap;         
     overflow: hidden;
-    color: var(--color-test-variant4);
+    color: var(--color-test-variant1);
 }
 .primera2{
     text-overflow: ellipsis;
     white-space: nowrap;         
     overflow: hidden;
-    color: var(--color-test-variant4);
+    color: var(--color-test-variant1);
 }
 
 .primera3{
-    color:var(--color-test-variant4)!important;
-    background-color: var(--color-test);
+    color:var(--color-test-variant1)!important;
+    background-color: var(--color-text);
     font-family: var(--font-family-primary);
     margin-top: 1rem;
     border-radius: 10%;
@@ -164,3 +186,4 @@ p{
     width: 100%;
     height: 100%;
 }
+    */
