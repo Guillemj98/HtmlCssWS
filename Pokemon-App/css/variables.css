@@ -7,15 +7,20 @@ a tener la interfaz*/
 /*2.La segunda tipografia seleccionad es Fuzzy Bubles, esta va destinada al texto que aparce abajo en la interfaz*/
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('../assets/pkmn_rbygsc/PKMN\ RBYGSC.ttf') format('truetype');
+  }
  /* Aqui van las variables  */
 :root{
 
    /* Variables del tipo de fuente*/
-   --font-family-primary:"Space Mono",sans-serif;
-   --font-family-secondary:"Manrope",sans-serif;
+   --font-family-primary:"PokemonSolid",sans-serif;
+   --font-family-secondary:"Space Mono",sans-serif;
 
    /*Tamaños de fuentes*/
-   --font-size-header:1.5rem;
+   --font-size-header: 1rem;
 
    /* Variables de colores de fondo con sus variantes*/
    --color-background:	#800000;

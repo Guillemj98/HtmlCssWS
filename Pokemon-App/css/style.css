@@ -104,6 +104,7 @@ body{
     font-family: var(--font-family-primary);
     color: var(--color-test-variant1);
     font-size: var(--font-size-header);
+    letter-spacing: .3rem;
     overflow: hidden;
 }
 
@@ -207,7 +208,6 @@ body{
 .trainer-card__pokemon img{
     object-fit: cover; 
     position: absolute;
-    
     transition:transform 0.3s ease-in-out; 
     
    
@@ -284,13 +284,15 @@ body{
 }
 .trainer-card__pokemon-type  {
     position: absolute;
-    top: 6.5rem;  /* Hace que sobresalga un poco del borde inferior */
+    top: 6.5rem;  
     width: 2.5rem;
     height: 2.5rem;
     object-fit: cover;
     border-radius: 50%;
     z-index: 2;
     right: -25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 1);
   
 }
 .trainer-card__footer{
@@ -301,10 +303,10 @@ body{
     justify-content:center;
     align-items: center;   
     width: 100%;
-   padding: .5rem;
+    padding: .5rem;
   
     border-radius: 2rem;
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-secondary);
     color: var(--color-test-variant1);
 }
 
@@ -317,12 +319,12 @@ body{
     padding: 1rem;
     width: 100%;
     overflow: visible;
-    
+
 }
 .trainer-card__badge img {
-    width: 4rem; /* Ajusta el tamaño de las medallas según sea necesario */
+    width: 4rem; 
     height: 4rem;
-   
+    
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
@@ -330,30 +332,3 @@ body{
     transform: scale(2) rotate(360deg);
     
 }
-/*
- Tipografía:
-Usa una fuente clara y con buen contraste para los encabezados y títulos: Actualmente, la fuente del título "TARJETA DE ENTRENADOR" y "¡Medallas obtenidas!" podría mejorarse utilizando una fuente más distintiva o aumentando el contraste entre el texto y el color de fondo. Podrías intentar usar una fuente más gruesa para el título y una más legible para el resto.
-Añadir un poco de espacio entre las líneas: Aumenta el espacio entre las líneas (line-height) para hacer que el texto sea más fácil de leer.
-2. Alineación y Espaciado:
-Centrar el contenido: Aunque el contenido está mayormente centrado, considera alinear mejor todos los elementos tanto vertical como horizontalmente. Por ejemplo, las medallas en la parte inferior podrían estar más espaciadas y los Pokémon en la parte superior podrían tener más espacio entre ellos.
-Agregar márgenes en el encabezado y pie de página: Para evitar que los elementos se vean amontonados, podrías aumentar el margen alrededor del encabezado y pie de página.
-3. Fondo y Colores:
-Fondos con gradiente: El fondo actual es sólido, pero un gradiente sutil podría agregar profundidad al diseño. Por ejemplo, usar un fondo que transite de un color más claro en la parte superior a uno más oscuro en la parte inferior podría hacerlo más dinámico.
-Usar acentos temáticos de Pokémon: Considera incorporar colores o detalles que coincidan con el tema o el elemento de cada Pokémon (fuego, agua, eléctrico, etc.). Podrías resaltar las medallas y las tarjetas de Pokémon con sombras o pequeños resaltados de color para que se vea más coherente.
-4. Interactividad de los Pokémon y las Medallas:
-Efectos hover: Para las imágenes de los Pokémon, podrías agregar efectos hover como un ligero aumento o movimiento. Esto haría que la página se sienta más interactiva. Por ejemplo, cuando el usuario pasa el ratón sobre la imagen de un Pokémon, podría aumentar de tamaño o girar ligeramente.
-Animación de las medallas: El efecto hover en las medallas funciona, pero podrías hacerlo más emocionante agregando una animación sutil, como girarlas, cambiar el color de fondo al pasar el ratón o agregar un efecto de resplandor.
-5. Tarjeta y Bordes:
-Esquinas redondeadas para las imágenes: Agregar bordes redondeados a las imágenes (por ejemplo, para los Pokémon y medallas) puede crear una estética más suave y moderna.
-Sombras en las cajas: Agregar una sombra sutil a los elementos como las imágenes de los Pokémon y las medallas puede hacer que "salgan" de la página. Esto da profundidad y atrae la atención de los usuarios hacia los elementos clave.
-6. Espaciado Entre los Pokémon y las Medallas:
-Aumentar el espacio vertical entre las filas: Las medallas y los Pokémon podrían tener más espacio entre ellos para que no se vean tan amontonados. Podrías agregar más espacio entre las filas y poner un poco de relleno entre los elementos.
-7. Adaptabilidad para Móviles:
-Asegúrate de que se vea bien en móviles: Es importante que el diseño se vea bien en dispositivos móviles. Esto incluye ajustar la cuadrícula para las medallas y los Pokémon para que no se vean demasiado pequeños o amontonados en pantallas más pequeñas.
-8. Efectos Visuales Adicionales:
-Agregar efectos hover en las imágenes de los Pokémon: Haz que las imágenes de los Pokémon sean interactivas haciéndolas "aumentar" cuando el ratón pase sobre ellas o agregando un efecto sutil de sombra.
-Efecto de resplandor o resplandor en hover sobre las medallas: Dale a las medallas un efecto de resplandor cuando se pase el ratón por encima, lo que haría que el diseño se vea más dinámico y atractivo.
-9. Usar Temáticas de Pokémon:
-Considera usar iconos o fondos relacionados con Pokémon para enmarcar la tarjeta, creando una conexión más fuerte con el tema. Un fondo de una arena de gimnasio o batalla de Pokémon podría mejorar la temática.
-Al aplicar estos cambios, podrías hacer que la tarjeta se vea más pulida, moderna y visualmente atractiva, mientras mantienes una fuerte conexión con la temática de Pokémon.
-*/
