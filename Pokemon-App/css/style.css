@@ -281,6 +281,7 @@ body{
     font-family: var(--font-family-primary);
     color: var(--color-test-variant4);
     margin-bottom: 0.2rem;
+    margin-top: 0.3rem;
 }
 .trainer-card__pokemon-type  {
     position: absolute;
