@@ -334,3 +334,10 @@ body{
     transform: scale(2) rotate(360deg);
     
 }
+.trainer-card__social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+}
