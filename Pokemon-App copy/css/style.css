@@ -1,0 +1,347 @@
+
+/*Aqui importamos las variables que tenemos en el archivo de CSS Variables*/
+@import url(../css/variables.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gradiente-primary-version1),
+        url(../assets/imagenes/FondoP.jpg);
+    background-size: contain;  
+
+    
+    
+}
+.trainer-card{
+    margin: var(--spacing-md);
+    padding: var(--spacing-lg);
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 1rem;
+    z-index: 0;
+    overflow: hidden; 
+    transition:  0.3s ease-in-out;
+    
+    
+}
+.trainer-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background: var(--color-gradiente-primary-version2);
+    z-index: -2;
+    padding: 4px;
+    box-sizing: border-box;
+
+}
+.trainer-card::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    border-radius: 0.9rem;
+    background:
+        url(../assets/imagenes/Fondo.jpg),
+        var(--color-gradiente-primary-version1);
+   
+    background-size: cover ;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+.trainer-card:hover::before {
+    animation: shining 4s infinite;
+    background: 
+    var(--color-gradiente-shinnig);
+    filter: blur(200px);
+    
+    transition: 0.4s ease-in-out ;
+}
+
+.trainer-card:hover {
+    transform: scale(1.2); 
+    background:  var(--color-gradiente-primary-version2);   
+    transition: transform 1s ease-in-out;
+}
+@keyframes shining {
+    0% {
+        transform: translateX(-150%) rotate(-45deg); 
+        
+    }
+    100% {
+        transform: translateX(500%) rotate(-45deg); 
+       
+    }
+}
+
+.trainer-card__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    gap: var(--spacing-xxl);
+    margin: var(--spacing-md);
+    height: 100%;
+    font-family: var(--font-family-primary);
+    color: var(--color-test-variant1);
+    letter-spacing: .3rem;
+    overflow: hidden;
+}
+
+.trainer-card__logo img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: var(--spacing-md);
+    animation: giraQueGira 2s linear infinite;
+    
+}
+@keyframes giraQueGira {
+    0%{
+        transform: rotate(0deg) scale(1.8);
+    }
+    100%{
+        transform: rotate(360deg)  scale(1.8);
+    }
+}
+
+.trainer-card__title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	border: 5px groove rgba(176,196,222,1);
+	border-radius: 1rem;
+	margin: 0rem var(--spacing-xs) 0rem var(--spacing-xs);
+	padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+.trainer-card__id{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    font-size: var(--text-size-xl); 
+   
+}
+.trainer-card__main {
+    font-size: var(--text-size-4xl);
+    font-weight: bold;
+    color: var(--color-test-variant1); 
+}
+.trainer-card__content{
+    margin: var(--spacing-md);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+    justify-content: space-between;
+    align-items: center;   
+    width: 100%;
+    
+}
+
+.trainer-card__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 4fr);
+    gap: .5rem;
+    border-radius: 2rem;
+    justify-items:center;
+    align-items: center;
+    width: auto;
+    z-index: 0;  
+    margin-left: var(--spacing-xxl);
+}
+
+.trainer-card__trainer img{
+    display: flex;
+    width: 15rem;
+    height: 24.2rem;
+    margin-right: 9.5rem;
+    border: 3px groove black;
+    border-radius: 1rem;
+    
+}
+.trainer-card__pokemon{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    border: 3px groove black;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative; 
+} 
+
+.overlay-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.trainer-card__pokemon img{
+    object-fit: cover; 
+    object-position: top center;
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    transition:transform 1s ease-in-out; 
+    transform: scale(1.3);
+    
+   
+    
+}
+.overlay-animation::after {
+	content: "";
+	position: absolute;
+	top: -83%;
+	left: 0;
+	width: 70%;
+	height: 267%;
+	background: var(--color-gradiente-borde-metalico-linear);
+	animation: shiningDelay 2s infinite ease-in-out;
+	filter: blur(9px) opacity(0.4);
+}
+
+@keyframes shiningDelay {
+    0% {
+        transform: translateX(-150%) rotate(-45deg); ; 
+    }
+    100% {
+        transform: translateX(800%) rotate(-45deg); ; 
+    }
+}
+.trainer-card__pokemon img:hover {
+    transform: scale(1.7) ;
+}
+
+.trainer-card__pokemon:nth-child(1) .overlay-animation::after {
+    animation-delay: 0s; 
+}
+
+.trainer-card__pokemon:nth-child(2) .overlay-animation::after {
+    animation-delay: 0.2s; 
+}
+
+.trainer-card__pokemon:nth-child(3) .overlay-animation::after {
+    animation-delay: 0.4s; 
+}
+
+.trainer-card__pokemon:nth-child(4) .overlay-animation::after {
+    animation-delay: 0.6s;
+}
+
+.trainer-card__pokemon:nth-child(5) .overlay-animation::after {
+    animation-delay: 0.8s;
+}
+.trainer-card__pokemon:nth-child(6) .overlay-animation::after {
+    animation-delay: 1s;
+}
+
+.trainer-card__pokemon-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border-radius: 1.5rem;
+    padding: 0.3rem 1rem;
+    z-index: 1;
+
+}
+.trainer-card__pokemon-name{
+    font-size: var(--text-size-md);
+    font-weight: bold;
+    font-family: var(--font-family-primary);
+    color: var(--color-test-variant4);
+    margin-bottom: 0.2rem;
+    margin-top: 0.3rem;
+}
+.trainer-card__pokemon-type  {
+    position: absolute;
+    top: 6.5rem;  
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+    right: -20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 1);
+  
+}
+.trainer-card__footer{
+    margin: var(--spacing-xs);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    justify-content:center;
+    align-items: center;   
+    width: 100%;
+    padding: var(--spacing-xs);
+  
+    border-radius: 2rem;
+    font-family: var(--font-family-secondary);
+    color: var(--color-test-variant1);
+}
+
+.trainer-card__badges{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    width: 100%;
+    overflow: visible;
+
+}
+.trainer-card__badge img {
+    width: 4rem; 
+    height: 4rem;
+    
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.trainer-card__badge img:hover {
+    transform: scale(1.8) rotate(360deg);
+    
+}
+.trainer-card__social  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-size: var(--text-size-md);
+}
