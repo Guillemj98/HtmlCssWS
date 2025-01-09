@@ -20,7 +20,23 @@ a tener la interfaz*/
    --font-family-secondary:"Space Mono",sans-serif;
 
    /*Tamaños de fuentes*/
-   --font-size-header: 1rem;
+    --text-size-xs: 0.79rem;
+    --text-size-sm: 0.89rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.13rem;
+    --text-size-xl: 1.27rem;
+    --text-size-2xl: 1.42rem;
+    --text-size-3xl: 1.6rem;
+    --text-size-4xl: 1.8rem;
+
+    /*Variables para las pantallas fluidas*/
+    --fs-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.48vi + 1.15rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 0.78vi + 1.41rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.23vi + 1.71rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 1.87vi + 2.07rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 2.78vi + 2.5rem, 5rem);
 
    /* Variables de colores de fondo con sus variantes*/
    --color-background:	#800000;
@@ -29,9 +45,10 @@ a tener la interfaz*/
    --color-background-variant3:#200000;
    --color-background-variant4:#000000;
 
+  
+
    /* Variables de colores de fondo con sus variantes*/
    /*Aqui en este caso no hay mucho variedad*/
-   /*Este para el boton*/
    --color-text:#A52A2A;
    --color-text-variant1:#FFFFFF;
    --color-text-variant2:#FFA4A4;
@@ -67,128 +84,14 @@ a tener la interfaz*/
    --color-gradiente-borde-metalico-linear:linear-gradient(45deg, rgba(212,215,0,1) 0%, rgba(229,228,226,1) 50%, rgba(176,196,222,1) 100%);
    --color-gradiente-borde-metalico-brillante: linear-gradient(45deg, #ffd700, #ffffff, #b0e0e6);
    --color-gradiente-shinnig:linear-gradient(45deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+  
    /*Variables de los margenes paddings etc que hay que escoger*/
    --spacing-xs:.5rem;
    --spacing-sm:.7rem;
    --spacing-md: 1rem;
    --spacing-lg: 1.5rem;
    --spacing-xl: 2.0rem;
+   --spacing-xxl: 3rem;
 }
 
-h1{
-    font-family: var(--font-family-secondary);
-}
-/*
-h1, h2, h3, h4, h5{
-    font-family: var(--font-family-primary);
-    white-space: nowrap;         
-    overflow: hidden;            
-    text-overflow: ellipsis;
-}
-p{
-    font-family: var(--font-family-secondary);
-}
 
-.primera1{
-    
-    text-overflow: ellipsis;
-    white-space: nowrap;         
-    overflow: hidden;
-    color: var(--color-test-variant1);
-}
-.primera2{
-    text-overflow: ellipsis;
-    white-space: nowrap;         
-    overflow: hidden;
-    color: var(--color-test-variant1);
-}
-
-.primera3{
-    color:var(--color-test-variant1)!important;
-    background-color: var(--color-text);
-    font-family: var(--font-family-primary);
-    margin-top: 1rem;
-    border-radius: 10%;
-    border:none;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.tercera1{
-    font-family: var(--font-family-secondary);
-    text-overflow: ellipsis;
-    white-space: nowrap;         
-    overflow: hidden;
-    color: var(--color-text);
-}
-.tercera2{
-    text-overflow: ellipsis;
-    white-space: nowrap;         
-    overflow: hidden;
-    color: var(--color-text);
-}
-
-.tercera3{
-    color:var(--color-test-variant3)!important;
-    background-color: var(--color-text);
-    font-family: var();
-    margin-top: 1rem;
-    border-radius: 10%;
-    border:none;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.fondo{
-    padding: 2rem;
-    margin: 10rem;
-    gap: 1rem;
-    border: solid 1px black;
-    background:var(--color-gradiente-emphasis-version2) ;
-}
-
-.fondo2{
-    width: 50dvw;
-    padding: 2rem;
-    margin: 10rem;
-    gap: 1rem;
-    border: solid 1px black;
-    background: var(--color-gradiente-emphasis-version2);
-}
-
-.sexta1{
-    text-overflow: ellipsis;
-    white-space: nowrap;         
-    overflow: hidden;
-    color: var(--color-text);
-}
-.sexta2{
-    font-family: var();
-    text-overflow: ellipsis;
-    white-space: nowrap;         
-    overflow: hidden;
-    color: var(--color-text);
-}
-.sexta3{
-    color:var(--color-text)!important;
-    background-color: var(--color-background);
-    font-family: var(--font-family-primary);
-    margin-top: 1rem;
-    border-radius: 10%;
-    border:none;
-    padding: 1rem;
-    font-weight: bold;
-}
-.fondo5{
-    padding: 2rem;
-    gap: 1rem;
-    margin: 10rem;
-    border: solid 1px black;
-    background:var(--color-gradiente-emphasis-version2)
-}
-.gradiente{
-    background:var(--color-gradiente-primary-version1);
-    width: 100%;
-    height: 100%;
-}
-    */

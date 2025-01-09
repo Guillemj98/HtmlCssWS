@@ -1,0 +1,107 @@
+
+/*Aqui van a ir los imports de las tipografias, es decir lo tipos de letras que va
+a tener la interfaz*/
+
+/*1. La primera tipografia seleccionada(puede estar sujeta a cambios es Chakra Petch*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*2.La segunda tipografia seleccionad es Fuzzy Bubles, esta va destinada al texto que aparce abajo en la interfaz*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('../assets/pkmn_rbygsc/PKMN\ RBYGSC.ttf') format('truetype');
+  }
+ /* Aqui van las variables  */
+:root{
+
+   /* Variables del tipo de fuente*/
+   --font-family-primary:"PokemonSolid",sans-serif;
+   --font-family-secondary:"Space Mono",sans-serif;
+
+   /*Tamaños de fuentes*/
+    --text-size-xs: 0.79rem;
+    --text-size-sm: 0.89rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.13rem;
+    --text-size-xl: 1.27rem;
+    --text-size-2xl: 1.42rem;
+    --text-size-3xl: 1.6rem;
+    --text-size-4xl: 1.8rem;
+
+    /*Variables para las pantallas fluidas*/
+    --fs-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.48vi + 1.15rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 0.78vi + 1.41rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.23vi + 1.71rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 1.87vi + 2.07rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 2.78vi + 2.5rem, 5rem);
+
+   /* Variables de colores de fondo con sus variantes*/
+   --color-background:	#800000;
+   --color-background-variant1:#DDDDDD;
+   --color-background-variant2:#D04848;
+   --color-background-variant3:#200000;
+   --color-background-variant4:#000000;
+
+  
+
+   /* Variables de colores de fondo con sus variantes*/
+   /*Aqui en este caso no hay mucho variedad*/
+   --color-text:#A52A2A;
+   --color-text-variant1:#FFFFFF;
+   --color-text-variant2:#FFA4A4;
+   --color-text-variant3:#3F0000;
+   --color-text-variant4:#000000;
+
+   /* Variables de colores de acentuacion con sus variantes*/
+   --color-emphasis:#CD853F;
+   --color-emphasis-variant1:#FFFFFF;
+   --color-emphasis-variant2:#FFD8B1;
+   --color-emphasis-variant3:#703700;
+   --color-emphasis-variant4:#010100;
+
+   /* Variables de colores de repuesto con sus variantes*/
+   --color-test:#8B4513;
+   /*La variante 1 para el texto*/
+   --color-test-variant1:#FF1493;
+   --color-test-variant2:#FFCCA8;
+   --color-test-variant3:#130800;
+   --color-test-variant4:#000000;
+
+   /*Variables de los gradientes que hay que escoger*/
+   --color-gradiente-primary-version1:linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.7) 0%,    /* Negro con opacidad */
+      rgba(48, 25, 52, 0.6) 50%, /* Morado oscuro con opacidad */
+      rgba(0, 0, 0, 0.8) 100%   /* Negro más opaco */
+    );
+   /*Version2 para el fondo*/
+   --color-gradiente-primary-version2: linear-gradient(135deg, #000000 0%, #2a2a2a 15%,   #555555 30%,   #333333 45%,  #000000 60%,  #1a1a1a 75%,  #444444 90%, #000000 100%  );
+   
+   --color-gradiente-primary-version3:linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 1) 0%,    /* Negro con opacidad */
+      rgba(48, 25, 52, 1) 50%, /* Morado oscuro con opacidad */
+      rgba(0, 0, 0, 1) 100%   /* Negro más opaco */
+    );
+   --color-gradiente-emphasis-version1:linear-gradient(85deg, rgba(255,164,164,1) 36%, rgba(208,72,72,.0) 100%);
+
+   --color-gradiente-emphasis-version-fondo:linear-gradient(85deg, rgba(255,164,164,.8) 36%, rgba(208,72,72,.5) 100%);
+   --color-gradiente-emphasis-version2:linear-gradient(85deg, rgba(63,0,0,1) 72%, rgba(19,8,0,1) 100%);
+   
+   --color-gradiente-borde-metalico-linear:linear-gradient(45deg, rgba(212,215,0,1) 0%, rgba(229,228,226,1) 50%, rgba(176,196,222,1) 100%);
+   --color-gradiente-borde-metalico-brillante: linear-gradient(45deg, #ffd700, #ffffff, #b0e0e6);
+   --color-gradiente-shinnig:linear-gradient(45deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+  
+   /*Variables de los margenes paddings etc que hay que escoger*/
+   --spacing-xs:.5rem;
+   --spacing-sm:.7rem;
+   --spacing-md: 1rem;
+   --spacing-lg: 1.5rem;
+   --spacing-xl: 2.0rem;
+   --spacing-xxl: 3rem;
+}
+
+
